@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="css/hover-min.css">
   <title>MailGenius</title>
 </head>
 <body>
   <header class="header">
-    <div class="conteiner d-flex align-item-center">
+    <div class="conteiner d-flex align-item-center" data-aos="fade-down">
       <a href="#" class="logo">
         <img src="img/MailGenius-logo.png" alt="">
       </a>
@@ -31,24 +33,24 @@
   <main class="main">
     <section class="inner d-flex justufy-content-center">
       <div class="conteiner">
-        <div class="image-on-left">
+        <div class="image-on-left" data-aos="fade">
           <img class="small-gradient" src="img/small-img.png" alt="">
           <img class="send-mail" src="img/mail-left.png" alt="">
           <img src="img/big-img.png" alt="">
         </div>
         <!-- /.image-on-left -->
-        <div class="image-on-right">
+        <div class="image-on-right"data-aos="fade">
           <img class="small-right-gradient" src="img/grad-big-right-img.png" alt="">
           <img class="grad-small-right-img" src="img/grad-small-right-img.png" alt="">
           <img class="right-mail-img" src="img/right-mail-img.png" alt="">
         </div>
         <!-- /.image-on-right -->
-        <div class="send-you-imail-title">
+        <div class="send-you-imail-title" data-aos="fade">
           <h2 class="send-you-imail text-center">Send emails   that don't end up in the spam folder</h2>
           <p class="send-imail-desq text-center">Find out if your email is likely to trigger spam filters. Run a <span>free</span> email spam and security test in <span>less than one minute</span>.</p>
         </div>
         <!-- /.send-you-imail-title -->
-        <div class="btn btn-default text-center">
+        <div class="btn btn-default text-center hvr-buzz hvr-radial-in">
           <button>Test your email for free </button>
         </div>
         <div class="email-not-requred d-flex justufy-content-center align-item-center">
@@ -58,7 +60,7 @@
           <span>No Sign Up Required</span>
         </div>
         <div class="inner-partner-wrap">
-          <div class="conteiner">
+          <div class="conteiner" data-aos="fade-up">
             <p class="inner-partner-title text-center">Our free email spam checker works with every email provider</p>
             <div class="inner-partner-list d-flex justufy-content-center ">
               <div class="inner-partner-list-item d-flex justufy-content-center align-item-center">
@@ -91,5 +93,9 @@
     <!-- inner -->
   </main>
   <!-- /.main -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
